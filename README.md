@@ -2,30 +2,29 @@
 
 ## 🛠 Stack tecnológico
 
-| Tecnología | Icono | Rol |
-|------------|-------|-----|
-| Node.js | ![Node.js](https://img.shields.io/badge/-Node.js-333333?style=flat-square&logo=node.js) | Runtime v20 LTS |
-| TypeScript | ![TypeScript](https://img.shields.io/badge/-TypeScript-2F74C0?style=flat-square&logo=typescript) | Tipado estático moderno |
-| Express | ![Express](https://img.shields.io/badge/-Express-000000?style=flat-square&logo=express) | Framework HTTP |
-| Prisma ORM | ![Prisma](https://img.shields.io/badge/-Prisma-651FFF?style=flat-square&logo=prisma) | ORM para PostgreSQL |
-| PostgreSQL | ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-316192?style=flat-square&logo=postgresql) | Base relacional |
-| Zod | ![Zod](https://img.shields.io/badge/-Zod-000000?style=flat-square&logo=zod) | Validaciones |
-| bcrypt | ![bcrypt](https://img.shields.io/badge/-bcrypt-2F4F4F?style=flat-square&logo=bcrypt) | Hashing seguro |
-| JWT | ![JWT](https://img.shields.io/badge/-JWT-000000?style=flat-square&logo=json-web-tokens) | Autenticación tokenizada |
-| Docker | ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker) | Orquestación de servicios |
-| pgAdmin | ![pgAdmin](https://img.shields.io/badge/-pgAdmin-5B2D87?style=flat-square&logo=pgadmin) | GUI para PostgreSQL |
+| Tecnología | Icono                                                                                            | Rol                       |
+| ---------- | ------------------------------------------------------------------------------------------------ | ------------------------- |
+| Node.js    | ![Node.js](https://img.shields.io/badge/-Node.js-333333?style=flat-square&logo=node.js)          | Runtime v20 LTS           |
+| TypeScript | ![TypeScript](https://img.shields.io/badge/-TypeScript-2F74C0?style=flat-square&logo=typescript) | Tipado estático moderno   |
+| Express    | ![Express](https://img.shields.io/badge/-Express-000000?style=flat-square&logo=express)          | Framework HTTP            |
+| Prisma ORM | ![Prisma](https://img.shields.io/badge/-Prisma-651FFF?style=flat-square&logo=prisma)             | ORM para PostgreSQL       |
+| PostgreSQL | ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-316192?style=flat-square&logo=postgresql) | Base relacional           |
+| Zod        | ![Zod](https://img.shields.io/badge/-Zod-000000?style=flat-square&logo=zod)                      | Validaciones              |
+| bcrypt     | ![bcrypt](https://img.shields.io/badge/-bcrypt-2F4F4F?style=flat-square&logo=bcrypt)             | Hashing seguro            |
+| JWT        | ![JWT](https://img.shields.io/badge/-JWT-000000?style=flat-square&logo=json-web-tokens)          | Autenticación tokenizada  |
+| Docker     | ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker)             | Orquestación de servicios |
+| pgAdmin    | ![pgAdmin](https://img.shields.io/badge/-pgAdmin-5B2D87?style=flat-square&logo=pgadmin)          | GUI para PostgreSQL       |
 
 Además: `npm`/`pnpm`, `curl`, y herramientas habituales para desarrollo local.
-
 
 ## 👨‍💻 Autor
 
 **Isaías Fernández Lozano**
 
 > [![GitHub](https://img.shields.io/badge/GitHub-isaiasfl-181717?style=flat&logo=github)](https://github.com/isaiasfl)
-> 
+>
 > **Módulo**: Desarrollo Web Entorno Cliente (DWEC)
-> 
+>
 > **Curso**: 2025-2026
 
 ---
@@ -44,6 +43,9 @@ Además: `npm`/`pnpm`, `curl`, y herramientas habituales para desarrollo local.
 - [Ejemplos de Uso](#-ejemplos-de-uso)
 - [pgAdmin](#-pgadmin)
 - [Troubleshooting](#-troubleshooting)
+- [Recursos Adicionales](#-recursos-adicionales)
+- [Algunos ejercicios para el alumnado](#-para-alumnos)
+- [Licencia](#-licencia)
 
 ---
 
@@ -64,18 +66,18 @@ Además: `npm`/`pnpm`, `curl`, y herramientas habituales para desarrollo local.
 
 ## 🛠 Stack Tecnológico
 
-| Tecnología | Versión | Propósito |
-|------------|---------|-----------|
-| Node.js | 20 LTS | Runtime de JavaScript |
-| TypeScript | 5.7+ | Lenguaje con tipado estático |
-| Express | 5.x | Framework web |
-| Prisma | 6.x | ORM para PostgreSQL |
-| PostgreSQL | 16 | Base de datos relacional |
-| Zod | 3.x | Validaciones de esquemas |
-| bcrypt | 5.x | Hash de contraseñas |
-| JWT | 9.x | Tokens de autenticación |
-| Docker | - | Containerización |
-| pgAdmin | 4 | Administrador visual de PostgreSQL |
+| Tecnología | Versión | Propósito                          |
+| ---------- | ------- | ---------------------------------- |
+| Node.js    | 20 LTS  | Runtime de JavaScript              |
+| TypeScript | 5.7+    | Lenguaje con tipado estático       |
+| Express    | 5.x     | Framework web                      |
+| Prisma     | 6.x     | ORM para PostgreSQL                |
+| PostgreSQL | 16      | Base de datos relacional           |
+| Zod        | 3.x     | Validaciones de esquemas           |
+| bcrypt     | 5.x     | Hash de contraseñas                |
+| JWT        | 9.x     | Tokens de autenticación            |
+| Docker     | -       | Containerización                   |
+| pgAdmin    | 4       | Administrador visual de PostgreSQL |
 
 ---
 
@@ -130,6 +132,7 @@ docker-compose up -d
 ```
 
 Este comando:
+
 - ✅ Descarga las imágenes necesarias (PostgreSQL, pgAdmin, Node)
 - ✅ Crea los contenedores
 - ✅ Ejecuta las migraciones de Prisma
@@ -146,6 +149,7 @@ docker ps
 ```
 
 Deberías ver 3 contenedores corriendo:
+
 - `crud_postgres` (PostgreSQL)
 - `crud_pgadmin` (pgAdmin)
 - `crud_backend` (API)
@@ -160,18 +164,18 @@ Deberías ver 3 contenedores corriendo:
 
 El script de seed (`prisma/seed.ts`) inserta datos de prueba realistas:
 
-| Tabla | Cantidad | Descripción |
-|-------|----------|-------------|
-| **Users** | 2 usuarios | Usuarios de prueba para autenticación |
-| **Companies** | 4 empresas | Google, Microsoft, Amazon, Meta |
-| **Contacts** | 10 contactos | 8 contactos con empresa + 2 freelance |
+| Tabla         | Cantidad     | Descripción                           |
+| ------------- | ------------ | ------------------------------------- |
+| **Users**     | 2 usuarios   | Usuarios de prueba para autenticación |
+| **Companies** | 4 empresas   | Google, Microsoft, Amazon, Meta       |
+| **Contacts**  | 10 contactos | 8 contactos con empresa + 2 freelance |
 
 ### Credenciales de los usuarios de prueba:
 
-| Email | Password | Uso |
-|-------|----------|-----|
+| Email            | Password | Uso                     |
+| ---------------- | -------- | ----------------------- |
 | demo@example.com | Demo123! | Usuario de demostración |
-| test@example.com | Test123! | Usuario de testing |
+| test@example.com | Test123! | Usuario de testing      |
 
 ### Método 1: Ejecutar seed desde el host (Recomendado) ⭐
 
@@ -186,6 +190,7 @@ npm run prisma:seed
 ```
 
 Verás una salida similar a:
+
 ```
 🌱 Iniciando seed de la base de datos...
 ✅ Datos anteriores eliminados
@@ -234,6 +239,7 @@ curl http://localhost:3001/api/companies | jq '.companies[].name'
 ```
 
 Salida esperada:
+
 ```json
 "Meta"
 "Amazon"
@@ -251,6 +257,7 @@ npm run prisma:seed
 ```
 
 El script hace limpieza automática:
+
 1. Elimina todos los contactos
 2. Elimina todas las empresas
 3. Elimina todos los usuarios
@@ -259,18 +266,22 @@ El script hace limpieza automática:
 ### Troubleshooting del Seed
 
 **Error: "Port is already allocated" o problemas con puerto 3000**
+
 - El backend se ejecuta en el puerto **3001** (no 3000)
 - Verifica con: `docker ps | grep crud_backend`
 
 **Error: "bcrypt segmentation fault" en Docker**
+
 - Usa el Método 1 (desde el host) en lugar de dentro del contenedor
 - Alpine Linux + bcrypt nativo tienen problemas de compatibilidad
 
 **Error: "Cannot find module tsx"**
+
 - Asegúrate de haber ejecutado `npm install` primero
 - Verifica que estás en el directorio `backend/`
 
 **Los datos no aparecen después del seed**
+
 - Verifica que el backend está corriendo: `docker ps`
 - Revisa los logs: `docker-compose logs backend`
 - Prueba los endpoints directamente con curl
@@ -281,11 +292,11 @@ El script hace limpieza automática:
 
 ### Servicios disponibles
 
-| Servicio | URL | Credenciales |
-|----------|-----|--------------|
-| **Backend API** | http://localhost:3001 | - |
-| **pgAdmin** | http://localhost:5050 | Email: admin@admin.com<br>Password: Admin.123456 |
-| **PostgreSQL** | localhost:5432 | User: admin<br>Password: admin123<br>DB: contacts_db |
+| Servicio        | URL                   | Credenciales                                         |
+| --------------- | --------------------- | ---------------------------------------------------- |
+| **Backend API** | http://localhost:3001 | -                                                    |
+| **pgAdmin**     | http://localhost:5050 | Email: admin@admin.com<br>Password: Admin.123456     |
+| **PostgreSQL**  | localhost:5432        | User: admin<br>Password: admin123<br>DB: contacts_db |
 
 ### Probar la API
 
@@ -380,6 +391,7 @@ backend/
 ## 🔌 Endpoints de la API
 
 ### Base URL
+
 ```
 http://localhost:3001/api
 ```
@@ -388,34 +400,35 @@ http://localhost:3001/api
 
 ### 🔐 Autenticación
 
-| Método | Endpoint | Descripción | Requiere Auth |
-|--------|----------|-------------|---------------|
-| POST | `/auth/register` | Registrar nuevo usuario | ❌ |
-| POST | `/auth/login` | Iniciar sesión (obtener JWT) | ❌ |
-| GET | `/auth/me` | Obtener usuario autenticado | ✅ |
+| Método | Endpoint         | Descripción                  | Requiere Auth |
+| ------ | ---------------- | ---------------------------- | ------------- |
+| POST   | `/auth/register` | Registrar nuevo usuario      | ❌            |
+| POST   | `/auth/login`    | Iniciar sesión (obtener JWT) | ❌            |
+| GET    | `/auth/me`       | Obtener usuario autenticado  | ✅            |
 
 ### 🏢 Empresas
 
-| Método | Endpoint | Descripción | Requiere Auth |
-|--------|----------|-------------|---------------|
-| GET | `/companies` | Listar todas las empresas | ⚙️ |
-| GET | `/companies/:id` | Obtener empresa por ID | ⚙️ |
-| POST | `/companies` | Crear nueva empresa | ⚙️ |
-| PUT | `/companies/:id` | Actualizar empresa | ⚙️ |
-| DELETE | `/companies/:id` | Eliminar empresa | ⚙️ |
-| GET | `/companies/:id/contacts` | Contactos de una empresa | ⚙️ |
+| Método | Endpoint                  | Descripción               | Requiere Auth |
+| ------ | ------------------------- | ------------------------- | ------------- |
+| GET    | `/companies`              | Listar todas las empresas | ⚙️            |
+| GET    | `/companies/:id`          | Obtener empresa por ID    | ⚙️            |
+| POST   | `/companies`              | Crear nueva empresa       | ⚙️            |
+| PUT    | `/companies/:id`          | Actualizar empresa        | ⚙️            |
+| DELETE | `/companies/:id`          | Eliminar empresa          | ⚙️            |
+| GET    | `/companies/:id/contacts` | Contactos de una empresa  | ⚙️            |
 
 ### 👤 Contactos
 
-| Método | Endpoint | Descripción | Requiere Auth |
-|--------|----------|-------------|---------------|
-| GET | `/contacts` | Listar todos los contactos | ⚙️ |
-| GET | `/contacts/:id` | Obtener contacto por ID | ⚙️ |
-| POST | `/contacts` | Crear nuevo contacto | ⚙️ |
-| PUT | `/contacts/:id` | Actualizar contacto | ⚙️ |
-| DELETE | `/contacts/:id` | Eliminar contacto | ⚙️ |
+| Método | Endpoint        | Descripción                | Requiere Auth |
+| ------ | --------------- | -------------------------- | ------------- |
+| GET    | `/contacts`     | Listar todos los contactos | ⚙️            |
+| GET    | `/contacts/:id` | Obtener contacto por ID    | ⚙️            |
+| POST   | `/contacts`     | Crear nuevo contacto       | ⚙️            |
+| PUT    | `/contacts/:id` | Actualizar contacto        | ⚙️            |
+| DELETE | `/contacts/:id` | Eliminar contacto          | ⚙️            |
 
 **Leyenda:**
+
 - ✅ = Siempre requiere autenticación
 - ❌ = No requiere autenticación
 - ⚙️ = Depende de `AUTH_REQUIRED` (false = no requiere, true = requiere)
@@ -429,17 +442,21 @@ http://localhost:3001/api
 Este backend tiene un sistema de autenticación **opcional** controlado por la variable `AUTH_REQUIRED`:
 
 #### Modo 1: Sin autenticación (por defecto)
+
 ```env
 AUTH_REQUIRED=false
 ```
+
 - Los endpoints de CRUD funcionan **sin token**
 - Ideal para desarrollo y alumnos principiantes
 - Pueden practicar CRUD sin implementar login
 
 #### Modo 2: Con autenticación
+
 ```env
 AUTH_REQUIRED=true
 ```
+
 - Los endpoints de CRUD **requieren token JWT**
 - Los alumnos deben implementar login en el frontend
 - Token se envía en header: `Authorization: Bearer <token>`
@@ -448,8 +465,8 @@ AUTH_REQUIRED=true
 
 El seed incluye 2 usuarios para testing:
 
-| Email | Password |
-|-------|----------|
+| Email            | Password |
+| ---------------- | -------- |
 | demo@example.com | Demo123! |
 | test@example.com | Test123! |
 
@@ -464,6 +481,7 @@ curl http://localhost:3001/api/companies
 ```
 
 **Respuesta:**
+
 ```json
 {
   "companies": [
@@ -498,6 +516,7 @@ curl -X POST http://localhost:3001/api/contacts \
 ```
 
 **Respuesta:**
+
 ```json
 {
   "message": "Contacto creado exitosamente",
@@ -535,6 +554,7 @@ curl -X POST http://localhost:3001/api/auth/register \
 ```
 
 **Respuesta:**
+
 ```json
 {
   "message": "Usuario registrado exitosamente",
@@ -560,6 +580,7 @@ curl -X POST http://localhost:3001/api/auth/login \
 ```
 
 **Respuesta:**
+
 ```json
 {
   "message": "Login exitoso",
@@ -634,6 +655,7 @@ Servers → CRUD Database → Databases → contacts_db → Schemas → public �
 ```
 
 Verás 3 tablas:
+
 - `users` (usuarios para autenticación)
 - `companies` (empresas)
 - `contacts` (contactos)
@@ -701,15 +723,15 @@ Si necesitas cambiar los puertos, editar `docker-compose.yml`:
 services:
   backend:
     ports:
-      - "3002:3000"  # Cambiar 3001 a 3002
+      - "3002:3000" # Cambiar 3001 a 3002
 
   postgres:
     ports:
-      - "5433:5432"  # Cambiar 5432 a 5433
+      - "5433:5432" # Cambiar 5432 a 5433
 
   pgadmin:
     ports:
-      - "5051:80"    # Cambiar 5050 a 5051
+      - "5051:80" # Cambiar 5050 a 5051
 ```
 
 **Importante**: No cambies el segundo número (puerto interno del contenedor), solo el primero (puerto externo de tu máquina).

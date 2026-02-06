@@ -1,16 +1,32 @@
 # 🚀 Backend CRUD - Gestión Empresarial
 
-Backend completo con Node.js, TypeScript, Express, Prisma y PostgreSQL para gestionar contactos y empresas. Incluye autenticación JWT opcional, dockerización completa y datos de prueba precargados.
+## 🛠 Stack tecnológico
 
----
+| Tecnología | Icono | Rol |
+|------------|-------|-----|
+| Node.js | ![Node.js](https://img.shields.io/badge/-Node.js-333333?style=flat-square&logo=node.js) | Runtime v20 LTS |
+| TypeScript | ![TypeScript](https://img.shields.io/badge/-TypeScript-2F74C0?style=flat-square&logo=typescript) | Tipado estático moderno |
+| Express | ![Express](https://img.shields.io/badge/-Express-000000?style=flat-square&logo=express) | Framework HTTP |
+| Prisma ORM | ![Prisma](https://img.shields.io/badge/-Prisma-651FFF?style=flat-square&logo=prisma) | ORM para PostgreSQL |
+| PostgreSQL | ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-316192?style=flat-square&logo=postgresql) | Base relacional |
+| Zod | ![Zod](https://img.shields.io/badge/-Zod-000000?style=flat-square&logo=zod) | Validaciones |
+| bcrypt | ![bcrypt](https://img.shields.io/badge/-bcrypt-2F4F4F?style=flat-square&logo=bcrypt) | Hashing seguro |
+| JWT | ![JWT](https://img.shields.io/badge/-JWT-000000?style=flat-square&logo=json-web-tokens) | Autenticación tokenizada |
+| Docker | ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker) | Orquestación de servicios |
+| pgAdmin | ![pgAdmin](https://img.shields.io/badge/-pgAdmin-5B2D87?style=flat-square&logo=pgadmin) | GUI para PostgreSQL |
+
+Además: `npm`/`pnpm`, `curl`, y herramientas habituales para desarrollo local.
+
 
 ## 👨‍💻 Autor
 
 **Isaías Fernández Lozano**
-[![GitHub](https://img.shields.io/badge/GitHub-isaiasfl-181717?style=flat&logo=github)](https://github.com/isaiasfl)
 
-**Módulo**: Desarrollo Web Entorno Cliente (DWEC)
-**Curso**: 2025-2026
+> [![GitHub](https://img.shields.io/badge/GitHub-isaiasfl-181717?style=flat&logo=github)](https://github.com/isaiasfl)
+> 
+> **Módulo**: Desarrollo Web Entorno Cliente (DWEC)
+> 
+> **Curso**: 2025-2026
 
 ---
 
@@ -758,13 +774,3 @@ npm run dev
 ## 📄 Licencia
 
 MIT
-
----
-
-## 👨‍💻 Autor
-
-Backend desarrollado para práctica educativa de CRUD con React 19 + TypeScript + Prisma + PostgreSQL.
-
----
-
-¡Listo para usar! 🚀
